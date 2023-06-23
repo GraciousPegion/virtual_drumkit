@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <title>Drum Kit</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 5rem;
+            font-family: 'Tangerine', cursive;
+            color: white;
+            text-shadow: 2px 2px palevioletred;
+        }
+        button{
+            width: 120px;
+            height: 120px;
+            border-radius: 6px;
+            border-width: 10px;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+        .pressed{
+            border-color: aliceblue;
+        }
+        .container{
+            display: flex;
+            margin-top: 200px;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-left: 25px;
+            row-gap: 50px;
+        }
+
+        footer{
+            text-align: center;
+            font-size: large;
+            margin-top: 200px;
+            font-family: 'EB Garamond', serif;
+        }
+        .crash{
+            background: url(images/crash1.png) no-repeat;
+            background-size:cover;
+        }
+        .tom1{
+            background: url(images/images\ \(2\).jfif) no-repeat;
+            background-size: cover;
+            padding-bottom: 10px;
+        }
+        .tom2{
+            background: url(images/images.jfif) no-repeat;
+            background-size: cover;
+            padding-bottom: 10px;
+        }
+        .tom3{
+            background: url(images/images\ \(3\).jfif) no-repeat;
+            background-size: cover;
+            padding-bottom: 10px;
+        }
+        .tom4{
+            background: url(images/t1.webp) no-repeat;
+            background-size: cover;
+        }
+        .snare{
+            background: url(images/snare_d.jpg) no-repeat;
+            background-size: cover;
+            padding-top: 20px;
+        }
+        .kick
+        {
+            background: url(images/k1.jpg) no-repeat;
+            background-size: cover;
+            padding-top: 20px; 
+        }
+        @media (min-height:800px){
+            .container{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+        }
+    </style>
+</head>
+<body style="background-color: rgb(32, 32, 32)">
+    <h1>Drum Kit..🥁</h1>
+    <div class="container">
+        <div><button class="tom1 q">q</button></div>
+        <div><button class="tom2 w">w</button></div>
+        <div><button class="tom3 e">e</button></div>
+        <div><button class="tom4 r">r</button></div>
+        <div><button class="snare t">t</button></div>
+        <div><button class="crash y">y</button></div>
+        <div><button class="kick u">u</button></div>
+    </div>
+    <footer style="color: aliceblue;">
+        © copyrighted to creator R from India
+    </footer>
+    <script src="drumkit.js" charset="UTF-8"></script>
+</body>
+</html>
